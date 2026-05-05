@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AllPro Elite — VIP private duty nursing, concierge care staffing, nannies, companions, and personal assistants.">
+  <title>AllPro Elite — Private Client Services</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .elite-hero {
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: var(--navy2);
+    }
+    .elite-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg, rgba(11,17,32,0.97) 50%, rgba(11,17,32,0.6) 100%);
+    }
+    .elite-hero-img {
+      position: absolute;
+      inset: 0;
+      /* Replace with: background: url('images/elite-hero.jpg') center/cover no-repeat; */
+      background: linear-gradient(135deg, #0b1120 0%, #1a2540 100%);
+    }
+    .elite-hero-img-placeholder {
+      position: absolute;
+      right: 60px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 420px;
+      height: 560px;
+      border: 1px dashed rgba(201,168,76,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      color: rgba(201,168,76,0.3);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .elite-hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 120px 40px;
+      max-width: var(--max);
+      margin: 0 auto;
+      width: 100%;
+    }
+    .elite-tag {
+      display: inline-block;
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--navy);
+      background: var(--gold);
+      padding: 6px 16px;
+      margin-bottom: 28px;
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 60px;
+    }
+    .process-step {
+      background: var(--navy2);
+      border: 1px solid var(--border);
+      padding: 52px 40px;
+      position: relative;
+      transition: border-color var(--transition);
+    }
+    .process-step:hover { border-color: rgba(201,168,76,0.4); }
+    .step-num {
+      font-family: var(--font-display);
+      font-size: 72px;
+      font-weight: 300;
+      color: rgba(201,168,76,0.08);
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      line-height: 1;
+    }
+    .step-roman {
+      font-family: var(--font-display);
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      color: var(--gold);
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .process-step h3 {
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+    .process-step p { font-size: 14px; color: var(--muted); line-height: 1.8; }
+    .process-step .img-slot { height: 200px; margin-top: 28px; }
+
+    .disciplines-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      margin-top: 48px;
+    }
+    .discipline-item {
+      background: var(--navy2);
+      border: 1px solid var(--border);
+      padding: 40px;
+      transition: border-color var(--transition);
+    }
+    .discipline-item:hover { border-color: rgba(201,168,76,0.4); }
+    .discipline-num {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .discipline-item h3 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .discipline-item p { font-size: 14px; color: var(--muted); line-height: 1.8; }
+
+    .elite-form-section {
+      background: var(--navy2);
+      border-top: 1px solid var(--border);
+      padding: 100px 0;
+    }
+    .elite-form-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .elite-form-title {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .pullquote {
+      border-left: 2px solid var(--gold);
+      padding: 24px 36px;
+      margin: 48px 0;
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--cream);
+      background: rgba(201,168,76,0.03);
+    }
+  </style>
+</head>
+<body>
+
+<div id="site-nav"></div>
+
+<!-- ELITE HERO -->
+<div class="elite-hero">
+  <div class="elite-hero-img">
+    <div class="elite-hero-img-placeholder">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      HERO IMAGE<br>adobestock_210453683
+    </div>
+  </div>
+  <div class="elite-hero-bg"></div>
+  <div class="elite-hero-content">
+    <div class="elite-tag">Private Client Services</div>
+    <h1 style="font-family:var(--font-display); font-size:clamp(44px,6vw,82px); font-weight:300; line-height:1.08; color:var(--white); max-width:640px; margin-bottom:28px;">Care you can <em style="color:var(--gold2); font-style:italic;">trust completely.</em></h1>
+    <p style="font-size:15px; color:var(--muted); max-width:480px; margin-bottom:48px; line-height:1.85;">AllPro Elite connects discerning families and individuals with rigorously vetted private nurses, nannies, companions, and personal assistants — matched to your household's exact standard.</p>
+    <div style="display:flex; gap:16px; flex-wrap:wrap;">
+      <a href="#consult" class="btn-primary">Schedule a Free Consultation</a>
+      <a href="#how-it-works" class="btn-outline">How It Works</a>
+    </div>
+    <p style="font-size:11px; letter-spacing:0.12em; color:var(--muted); margin-top:24px; text-transform:uppercase;">Exclusively Private. Exceptionally Vetted.</p>
+  </div>
+</div>
+
+<!-- PURPOSE -->
+<section>
+  <div class="container">
+    <div class="two-col">
+      <div class="fade-up">
+        <div class="section-label">Our Purpose</div>
+        <h2 class="section-title">We work for <em>you</em> — not the candidate.</h2>
+        <p class="section-body">Finding someone you can truly trust in your home is one of the most personal decisions a family makes. Most staffing agencies represent both sides. We don't.</p>
+        <p class="section-body" style="margin-top:16px;">AllPro Elite is retained exclusively by the families and individuals we serve. Every professional we recommend has passed our rigorous multi-stage vetting process — so you never have to wonder.</p>
+        <p class="section-body" style="margin-top:16px;">As a nurse-led agency, we blend clinical insight with personal attention to create long-lasting relationships built on trust, reliability, and care.</p>
+        <div class="pullquote">"Every professional we present has earned the right to enter your home."</div>
+      </div>
+      <div class="fade-up">
+        <!-- Replace with: <img src="images/elite-purpose.jpg" alt="AllPro Elite care"> -->
+        <div class="img-slot" style="height:500px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          PURPOSE IMAGE — adobestock_297207162
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- DISCIPLINES -->
+<section style="background: var(--navy2);">
+  <div class="container">
+    <div class="section-label fade-up">Professionals We Place</div>
+    <h2 class="section-title fade-up">Every discipline. <em>Every standard.</em></h2>
+    <div class="disciplines-grid">
+      <div class="discipline-item fade-up">
+        <div class="discipline-num">01</div>
+        <h3>Private Nurses</h3>
+        <p>VIP-level nursing care for post-operative recovery, chronic care management, and round-the-clock medical support in the home.</p>
+      </div>
+      <div class="discipline-item fade-up">
+        <div class="discipline-num">02</div>
+        <h3>Elite Nannies</h3>
+        <p>Highly qualified childcare professionals with verifiable credentials, multilingual capabilities, and exemplary references.</p>
+      </div>
+      <div class="discipline-item fade-up">
+        <div class="discipline-num">03</div>
+        <h3>Companions</h3>
+        <p>Trusted, engaging companions for elderly family members or individuals seeking consistent, high-quality personal support.</p>
+      </div>
+      <div class="discipline-item fade-up">
+        <div class="discipline-num">04</div>
+        <h3>Personal Assistants</h3>
+        <p>Discreet, highly capable personal assistants to manage household logistics, scheduling, travel, and day-to-day operations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-label fade-up">How It Works</div>
+    <h2 class="section-title fade-up">A process built on <em>thoroughness and discretion.</em></h2>
+    <div class="process-steps">
+
+      <div class="process-step fade-up">
+        <span class="step-num">I</span>
+        <div class="step-roman">Step I</div>
+        <h3>Discovery</h3>
+        <p>We begin with a personalized consultation to learn about your household, lifestyle, and care goals. Our nurse-led team takes the time to understand every detail — from daily routines to specialized needs.</p>
+        <div class="img-slot">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          adobestock_535158743
+        </div>
+      </div>
+
+      <div class="process-step fade-up">
+        <span class="step-num">II</span>
+        <div class="step-roman">Step II</div>
+        <h3>Curated Match</h3>
+        <p>Our team recruits, screens, and interviews only the most qualified professionals. Each candidate undergoes clinical vetting, credential verification, and background checks. Salary discussions handled with full transparency.</p>
+        <div class="img-slot">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          adobestock_1735498800
+        </div>
+      </div>
+
+      <div class="process-step fade-up">
+        <span class="step-num">III</span>
+        <div class="step-roman">Step III</div>
+        <h3>Placement</h3>
+        <p>You hire your chosen professional directly — no payroll or employment obligations for us. Our one-time placement fee includes a 30-day replacement guarantee and continued concierge support as needed.</p>
+        <div class="img-slot">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          adobestock_281864921
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTATION FORM -->
+<div class="elite-form-section" id="consult">
+  <div class="container">
+    <div class="elite-form-wrap">
+      <div class="elite-form-title fade-up">
+        <div class="section-label" style="justify-content:center;">Free Consultation</div>
+        <h2 class="section-title" style="text-align:center; max-width:100%;">Begin with a <em>private conversation.</em></h2>
+        <p style="font-size:14px; color:var(--muted); margin-top:12px; text-align:center;">Share your needs with us. A member of our team will be in touch within one business day. All enquiries are handled with complete discretion and confidentiality.</p>
+        <p style="font-size:12px; color:var(--muted); margin-top:8px; text-align:center; letter-spacing:0.08em; text-transform:uppercase;">No obligation. No pressure. Just a conversation.</p>
+      </div>
+      <form class="form-grid fade-up" onsubmit="return false;">
+        <div class="form-field">
+          <label>First Name</label>
+          <input type="text" placeholder="First name">
+        </div>
+        <div class="form-field">
+          <label>Last Name</label>
+          <input type="text" placeholder="Last name">
+        </div>
+        <div class="form-field">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com">
+        </div>
+        <div class="form-field">
+          <label>Phone (Optional)</label>
+          <input type="tel" placeholder="(000) 000-0000">
+        </div>
+        <div class="form-field full">
+          <label>Type of Professional Needed</label>
+          <select>
+            <option value="">Select a category</option>
+            <option>Private Nurse</option>
+            <option>Elite Nanny</option>
+            <option>Companion</option>
+            <option>Personal Assistant</option>
+            <option>Multiple / Unsure</option>
+          </select>
+        </div>
+        <div class="form-field full">
+          <label>Tell Us About Your Needs</label>
+          <textarea placeholder="Share details about your household, timeline, and requirements..."></textarea>
+        </div>
+        <div class="form-field full">
+          <button type="submit" class="btn-primary" style="border:none; cursor:pointer; width:100%; padding:18px;">Request Consultation</button>
+          <p class="form-note" style="text-align:center;">All enquiries are handled in strict confidence.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="site-footer"></div>
+<script src="shared.js"></script>
+</body>
+</html>
