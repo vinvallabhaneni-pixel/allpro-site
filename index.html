@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="#1 Healthcare Staffing and Consulting in New York. By Yulandie Latham.">
+  <title>AllPro NYC — Healthcare Staffing &amp; Consulting</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* HOME-SPECIFIC */
+    .home-banner {
+      width: 100%;
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .home-banner .img-slot { height: 420px; }
+
+    .hub-section {
+      padding: 100px 0;
+      background: var(--navy2);
+      border-bottom: 1px solid var(--border);
+    }
+    .hub-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      margin-top: 60px;
+    }
+    .hub-card {
+      position: relative;
+      overflow: hidden;
+      background: var(--navy);
+      border: 1px solid var(--border);
+      display: block;
+      transition: border-color var(--transition);
+    }
+    .hub-card:hover { border-color: rgba(201,168,76,0.5); }
+    .hub-card-img { height: 320px; }
+    .hub-card-img .img-slot { height: 100%; }
+    .hub-card-body { padding: 36px 40px; }
+    .hub-card-label {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .hub-card-title {
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .hub-card-desc { font-size: 14px; color: var(--muted); }
+    .hub-card-arrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 20px;
+    }
+
+    .gallery-section { padding: 80px 0; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 48px;
+    }
+    .gallery-item .img-slot { height: 260px; }
+    .gallery-item:first-child {
+      grid-column: span 2;
+    }
+    .gallery-item:first-child .img-slot { height: 340px; }
+
+    .stats-band {
+      background: var(--navy2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 60px 0;
+    }
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 32px 24px;
+      border-right: 1px solid var(--border);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 52px;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+
+    .subscribe-section {
+      padding: 80px 0;
+      border-top: 1px solid var(--border);
+    }
+    .subscribe-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .subscribe-form { display: flex; gap: 0; }
+    .subscribe-form input[type="email"] {
+      flex: 1;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-right: none;
+      color: var(--cream);
+      font-family: var(--font-body);
+      font-size: 14px;
+      padding: 14px 20px;
+      outline: none;
+    }
+    .subscribe-form input[type="email"]:focus { border-color: var(--gold); }
+    .subscribe-form button {
+      padding: 14px 28px;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: var(--font-body);
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+    .subscribe-form button:hover { background: var(--gold2); }
+  </style>
+</head>
+<body>
+
+<div id="site-nav"></div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-image-slot">
+    <!-- Replace background-image with: url('images/hero-home.jpg') background-size: cover; background-position: center -->
+    <div class="hero-image-placeholder"></div>
+  </div>
+  <div class="hero-content container">
+    <div class="hero-eyebrow">AllPro NYC &nbsp;·&nbsp; By Yulandie Latham</div>
+    <h1>Healthcare staffing and consulting, <em>elevated.</em></h1>
+    <p class="hero-sub">New York's trusted partner in nursing services, business consulting, and professional healthcare training — serving NJ and NY since 2018.</p>
+    <div class="hero-actions">
+      <a href="about.html" class="btn-primary">Discover AllPro</a>
+      <a href="contact.html" class="btn-outline">Get in Touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- BANNER IMAGE -->
+<div class="home-banner">
+  <div class="img-slot">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+    BANNER IMAGE — allprobanner.png
+  </div>
+</div>
+
+<!-- HUB SECTION -->
+<section class="hub-section">
+  <div class="container">
+    <div class="section-label fade-up">Our Divisions</div>
+    <h2 class="section-title fade-up">Two ways we <em>serve you.</em></h2>
+    <div class="hub-grid">
+      <a href="nursing.html" class="hub-card fade-up">
+        <div class="hub-card-img">
+          <div class="img-slot">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            STAFFING IMAGE
+          </div>
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-label">Staffing</div>
+          <div class="hub-card-title">AllPro Staffing</div>
+          <p class="hub-card-desc">Professional nursing placements and home care staffing for agencies across New York State.</p>
+          <span class="hub-card-arrow">Explore Staffing →</span>
+        </div>
+      </a>
+      <a href="consulting.html" class="hub-card fade-up">
+        <div class="hub-card-img">
+          <div class="img-slot">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            CONSULTING IMAGE
+          </div>
+        </div>
+        <div class="hub-card-body">
+          <div class="hub-card-label">Consulting</div>
+          <div class="hub-card-title">AllPro Consulting</div>
+          <p class="hub-card-desc">Healthcare business operations, compliance, training programs, and strategic guidance for organizations.</p>
+          <span class="hub-card-arrow">Explore Consulting →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-band">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-item fade-up">
+        <div class="stat-num">2018</div>
+        <div class="stat-label">Founded</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-num">NY &amp; NJ</div>
+        <div class="stat-label">Service Area</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-num">AHA</div>
+        <div class="stat-label">Certified Trainer</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-num">NCCDP</div>
+        <div class="stat-label">Dementia Certified</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="section-label fade-up">Our Work</div>
+    <h2 class="section-title fade-up">Compassion in <em>every setting.</em></h2>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-up">
+        <div class="img-slot">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          GALLERY IMAGE 1 — adobestock_409195985
+        </div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="img-slot">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          GALLERY IMAGE 2 — adobestock_630979702
+        </div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="img-slot">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          GALLERY IMAGE 3 — adobestock_422101983
+        </div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="img-slot">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          GALLERY IMAGE 4 — adobestock_559072277
+        </div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="img-slot">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          GALLERY IMAGE 5 — adobestock_274032995
+        </div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="img-slot">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          GALLERY IMAGE 6 — image-74.jpg
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="container">
+    <h2 class="fade-up">Ready to elevate your <em class="serif" style="font-style:italic;">healthcare operations?</em></h2>
+    <p class="fade-up">Whether you need staffing support, compliance consulting, or professional training — we are here to help.</p>
+    <a href="contact.html" class="btn-primary fade-up">Get in Touch</a>
+  </div>
+</div>
+
+<!-- SUBSCRIBE -->
+<section class="subscribe-section">
+  <div class="container">
+    <div class="subscribe-inner">
+      <div class="fade-up">
+        <div class="section-label">Stay Informed</div>
+        <h2 class="section-title" style="font-size:clamp(24px,3vw,38px);">Updates from <em>AllPro NYC.</em></h2>
+        <p style="font-size:14px; color:var(--muted); margin-top:12px;">Resources, training announcements, and healthcare insights delivered to your inbox.</p>
+      </div>
+      <div class="fade-up">
+        <form class="subscribe-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email address">
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="form-note">No spam. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="shared.js"></script>
+</body>
+</html>
